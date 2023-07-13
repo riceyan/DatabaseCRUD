@@ -2,6 +2,7 @@ package sg.edu.rp.c346.id21017809.databasecrud;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
@@ -64,5 +65,17 @@ public class MainActivity extends AppCompatActivity {
                 aa.notifyDataSetChanged();
             }
         });
+        btnEdit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Note target = al.get(0);
+
+                Intent i = new Intent(MainActivity.this,
+                        EditActivity.class);
+                i.putExtra("data", target);
+                startActivity(i);
+            }
+        });
+
     }
 }

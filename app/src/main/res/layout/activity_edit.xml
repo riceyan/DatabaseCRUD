@@ -11,30 +11,30 @@
         android:id="@+id/tvID"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="TextView" />
+        android:text="@string/tvID" />
 
     <TextView
         android:id="@+id/tvEditContent"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="TextView" />
+        android:text="@string/tvEditContent" />
 
     <EditText
-        android:id="@+id/editTextText"
+        android:id="@+id/etContent"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="text" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btnUpdate"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Button" />
+        android:text="@string/btnUpdate" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/btnDelete"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Button" />
+        android:text="@string/btnDelete" />
 </LinearLayout>
